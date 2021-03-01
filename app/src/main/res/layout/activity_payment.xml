@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_payments_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose Payment Method"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="#808080" />
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/radio_group">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/radio_button_1"
+                android:text="Pay Online" />
+
+            <RadioButton
+                android:id="@+id/button_payment_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Pay with cash on delivery" />
+
+    </RadioGroup>
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginVertical="5dp"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="Pay Online" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_payment_cash"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginVertical="5dp"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="Pay with cash on delivery" />-->
+
+    <Button
+        android:id="@+id/button_payment_finish"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_layout_green"
+        android:text="Finish Payment"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
+

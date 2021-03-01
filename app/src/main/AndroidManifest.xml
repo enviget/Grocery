@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grocery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Grocery"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.grocery.activities.UpdateAddressActivity"></activity>
+        <activity android:name="com.example.grocery.activities.EditAddressActivity" />
+        <activity android:name="com.example.grocery.activities.PromoCodeActivity" />
+        <activity android:name="com.example.grocery.activities.MyAccountActivity" />
+        <activity android:name="com.example.grocery.activities.OrderHistoryActivity" />
+        <activity android:name="com.example.grocery.activities.OrderConfirmationActivity" />
+        <activity android:name="com.example.grocery.activities.PaymentActivity" />
+        <activity android:name="com.example.grocery.activities.AddAddressActivity" />
+        <activity android:name="com.example.grocery.activities.AddressActivity" />
+        <activity android:name="com.example.grocery.activities.CheckOutCartActivity" />
+        <activity android:name="com.example.grocery.activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.grocery.activities.LoginActivity" />
+        <activity android:name="com.example.grocery.activities.RegisterActivity" />
+        <activity android:name="com.example.grocery.activities.ProductActivity" />
+        <activity android:name="com.example.grocery.activities.SubCategoryActivity" />
+        <activity android:name="com.example.grocery.activities.MainActivity" />
+    </application>
+
+</manifest>

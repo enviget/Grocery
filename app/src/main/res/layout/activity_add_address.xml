@@ -1,0 +1,95 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_text_addaddress_street_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center"
+            android:hint="Street Name"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_addaddress_houseNo"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center"
+            android:hint="House Number"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_addaddress_city"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center"
+            android:hint="City"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_addaddress_pincode"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_addaddress_type"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center"
+            android:hint="Type"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/button_addaddress_save"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_layout_green"
+            android:text="Save Address"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

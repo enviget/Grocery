@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/grocery_logo_foreground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="25dp"
+        android:layout_above="@+id/edit_text_login_email"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edit_text_login_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/textbox_outline"
+        android:hint="Email"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_login_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_text_login_email"
+        android:layout_margin="10dp"
+        android:background="@drawable/textbox_outline"
+        android:hint="Password"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/button_login_login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edit_text_login_password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_baseline_input_24"
+        android:padding="16dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text_view_login_noacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Don't have an account?" />
+
+    <TextView
+        android:id="@+id/text_view_login_skip"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_login_noacc"
+        android:layout_centerHorizontal="true"
+        android:text="Skip Login" />
+
+
+</RelativeLayout>

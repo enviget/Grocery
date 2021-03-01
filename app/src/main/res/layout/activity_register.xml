@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_layout">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/grocery_logo_foreground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/edit_text_register_name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="Sign Up"/>
+
+
+    <EditText
+        android:id="@+id/edit_text_register_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/textbox_outline"
+        android:gravity="center"
+        android:hint="Name"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_register_email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_text_register_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/textbox_outline"
+        android:gravity="center"
+        android:hint="Email"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_register_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_text_register_email"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/textbox_outline"
+        android:gravity="center"
+        android:hint="Password"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_register_mobile"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:layout_below="@+id/edit_text_register_password"
+        android:background="@drawable/textbox_outline"
+        android:gravity="center"
+        android:hint="Mobile"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/button_register_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edit_text_register_mobile"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_baseline_input_24"
+        android:layout_marginVertical="5dp"/>
+
+    <TextView
+        android:id="@+id/text_view_register_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_register_register"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account?" />
+
+
+</RelativeLayout>

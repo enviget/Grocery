@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+
+        <item
+            android:id="@+id/nav_my_account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_address"
+            android:title="My Address" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_orderhisotry"
+            android:title="Order History" />
+        <item
+            android:id="@+id/nav_deals"
+            android:title="Deals" />
+        <item
+            android:id="@+id/nav_get_help"
+            android:title="Get Help" />
+        <item
+            android:id="@+id/nav_rate"
+            android:title="Rate Our App" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+
+    </group>
+
+</menu>

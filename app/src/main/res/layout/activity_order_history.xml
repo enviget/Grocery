@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layout"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchased Items"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="15dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_order_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_order_history"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
